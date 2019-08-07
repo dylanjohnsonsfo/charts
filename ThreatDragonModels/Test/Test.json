@@ -477,7 +477,7 @@
               },
               "position": {
                 "x": 335,
-                "y": 110
+                "y": 109
               },
               "angle": 0,
               "id": "1a620792-1b4d-48b5-9650-91806aba9cfd",
@@ -521,8 +521,9 @@
                   "title": "Generic DoS threat",
                   "type": "Denial of service",
                   "status": "Open",
-                  "severity": "Medium",
-                  "description": "A generic DoS threat"
+                  "severity": "High",
+                  "description": "A generic DoS threat\n\nResource exhaustion due to excessive connection count. Basic rate limiting base on # of connections is not an effective countermeasure here as an actor with capability could consume all available connections.",
+                  "mitigation": "In order to provide DDoS mitigation at the public edge of a service a specialized DDoS service is required. This service should provide the following capabilities. Filtering for known botnets and malicious actors, country based filtering."
                 },
                 {
                   "ruleId": "c1377855-ea20-4c97-8861-f95c364fb8d2",
@@ -634,6 +635,10 @@
                 {
                   "x": 508,
                   "y": 159
+                },
+                {
+                  "x": 485,
+                  "y": 165
                 }
               ],
               "id": "4244ec9f-5470-4183-995b-fc4e770b5ab3",
